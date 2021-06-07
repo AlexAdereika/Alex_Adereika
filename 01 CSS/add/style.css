@@ -1,0 +1,25 @@
+h3
+{
+    font-family: 'Caveat', cursive;
+    text-decoration: underline;
+    font-size: 18pt;
+    text-indent: 1.5em;
+}
+
+h1
+{
+    font-size: medium;
+}
+
+header 
+{
+    text-align: right;
+}
+
+article
+{
+    font-family: 'Caveat', cursive;
+    font-size: 18pt;
+    text-indent: 1.5em;
+    text-align: justify;
+}
