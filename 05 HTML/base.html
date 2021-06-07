@@ -22,8 +22,8 @@
                         <legend>Строка поиска</legend>
                         <input type="search" name="search1" maxlength="10">
                         <input type="submit" value="Искать"> <br>
-                        <label><input type="radio" name="radio_search1" [] value="1">на сайте</label>
-                        <label><input type="radio" name="radio_search1" [] value="2">в google</label>
+                        <label><input type="radio" name="radio_search1" value="1">на сайте</label>
+                        <label><input type="radio" name="radio_search1" value="2">в google</label>
                     </fieldset>
                 </form>
             </td>
@@ -34,8 +34,8 @@
                         <legend>Строка поиска</legend>
                         <label></label><input type="search" name="search2" maxlength="10" required autofocus>*</label>
                         <input type="submit" value="Искать"> <br>
-                        <label><input type="radio" name="radio_search2" [] value="1">на сайте</label>
-                        <label><input type="radio" name="radio_search2" [] value="2">в google</label> <br>
+                        <label><input type="radio" name="radio_search2" value="1">на сайте</label>
+                        <label><input type="radio" name="radio_search2" value="2">в google</label> <br>
                         <span><em>* - обязательное поле для ввода</em></span>
                     </fieldset>
                 </form>
@@ -60,10 +60,10 @@
                 <form method="GET" name="vote_form" action="http://fe.it-academy.by/TestForm.php">
                     <fieldset>
                         <legend>Как вам?</legend>
-                        <label><input type="radio" name="vote[]" value="1">ничего</label><br>
-                        <label><input type="radio" name="vote[]" value="2">неплохо</label><br>
-                        <label><input type="radio" name="vote[]" value="3">хорошо</label><br>
-                        <label><input type="radio" name="vote[]" value="4">супер</label><br>
+                        <label><input type="radio" name="vote" value="1">ничего</label><br>
+                        <label><input type="radio" name="vote" value="2">неплохо</label><br>
+                        <label><input type="radio" name="vote" value="3">хорошо</label><br>
+                        <label><input type="radio" name="vote" value="4">супер</label><br>
                         <input type="hidden" name="date_vote" value="04.06.2021">
                         <input type="submit" value="Отправить">
                     </fieldset>
@@ -113,10 +113,11 @@
         <tr>
             <td>
                 <h4>Загрузка файлов на сервер:</h4>
-                <form method="POST" name="upload_form" action="http://fe.it-academy.by/TestForm.php">
+                <form method="POST" name="upload_form" action="http://fe.it-academy.by/TestForm.php"
+                    enctype="multipart/form-data">
                     <fieldset>
                         <legend>Upload</legend>
-                        <input type="file" name="file" enctype="multipart/form-data"><br>
+                        <input type="file" name="file"><br>
                         <label>Срок хранения (года):<br>
                             <input type="text" name="storage_time" size="3">
                         </label>
