@@ -13,8 +13,8 @@
     <h4>Проверка пароля:</h4>
     <form method="post" name="formZ" id="formZ" action="">
         <fieldset>
-            <label><input type="password" name="pas1" id="pas1"> Пароль</label> <br>
-            <label><input type="password" name="passwordY" id="pas2"> Повторите пароль</label><br>
+            <label><input type="password" name="password1" id="pas1"> Пароль</label> <br>
+            <label><input type="password" name="password2" id="pas2"> Повторите пароль</label><br>
             <input type="submit" value="Отправить" id="submit">
         </fieldset>
     </form>
@@ -25,7 +25,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
 
-        $("#submit").click(function () {
+        $("#pas2").onChange(function () {
             $(".error").hide();
             var valueX = $("#pas1").val();
             var valueY = $("#pas2").val();
